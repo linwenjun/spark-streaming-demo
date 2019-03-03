@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5bc7fb5-0304-446a-a89d-cc95f0bd1633" name="Default Changelist" comment="" />
+    <list default="true" id="d5bc7fb5-0304-446a-a89d-cc95f0bd1633" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/scala/workshop/station/Station.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/workshop/station/Station.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -30,7 +32,7 @@
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="sbt" value="1" />
-          <entry key="scala" value="6" />
+          <entry key="scala" value="7" />
           <entry key="sh" value="2" />
         </counts>
       </usages-collector>
@@ -38,18 +40,18 @@
         <counts>
           <entry key="Bash" value="2" />
           <entry key="Dockerfile" value="1" />
-          <entry key="Scala" value="6" />
+          <entry key="Scala" value="7" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="662" />
+          <entry key="scala" value="728" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="662" />
+          <entry key="Scala" value="728" />
         </counts>
       </usages-collector>
     </session>
@@ -59,11 +61,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/workshop/station/Station.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="740">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#26#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.3.2-sources.jar!/org/apache/spark/sql/types/IntegerType.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -98,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="323">
               <caret line="17" column="16" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
@@ -129,7 +140,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -217,21 +228,6 @@
               <item name="workshop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-engineering-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-engineering-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="workshop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,18 +370,17 @@
       <option name="presentableId" value="Default" />
       <updated>1544938992977</updated>
       <workItem from="1544939007285" duration="8204000" />
-      <workItem from="1551537976784" duration="4560000" />
+      <workItem from="1551537976784" duration="7478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12764000" />
+    <option name="totallyTimeSpent" value="15682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="DB Browser" order="3" />
@@ -403,7 +398,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32882273" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32907802" />
@@ -481,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/workshop/wordcount/WordCountTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -516,10 +504,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.3.2-sources.jar!/org/apache/spark/sql/types/IntegerType.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/workshop/station/Station.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="740">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
           </folding>

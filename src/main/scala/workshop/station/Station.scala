@@ -6,7 +6,7 @@ import javassist.bytecode.SignatureAttribute.ArrayType
 import org.apache.log4j.{Level, LogManager, Logger}
 import org.apache.spark
 import org.apache.spark.sql.{SparkSession, types}
-import org.apache.spark.sql.types.{ArrayType, DoubleType, IntegerType, StringType, StructType}
+import org.apache.spark.sql.types.{ArrayType, DoubleType, IntegerType, StringType, StructType, TimestampType}
 import org.apache.spark.sql.functions._
 import org.apache.spark.streaming.Seconds
 import org.apache.spark.streaming.Time
@@ -35,6 +35,7 @@ object Station {
     val schema = types.ArrayType(new StructType()
       .add("id", StringType)
       .add("count", IntegerType)
+      .add("timestamp", TimestampType)
     )
 //      .add("location", new StructType()
 //        .add("longtitude", DoubleType)
@@ -42,6 +43,7 @@ object Station {
 //        .add("timestamp", StringType)
 //      ))
     import spark.implicits._
+
     val stream = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "ec2-52-82-65-35.cn-northwest-1.compute.amazonaws.com.cn:9092")
@@ -51,26 +53,21 @@ object Station {
 //      .groupBy(window($"timestamp", "5 seconds") as 'window)
 
 
-
-
     stream
-
-
       .selectExpr("CAST(value AS STRING) as raw_payload")
       .select(explode(from_json($"raw_payload", schema)) as "data")
       .select($"data.id" as "id",
-        $"data.count" as "count"
+        $"data.count" as "count",
+        $"data.timestamp" as "timestamp"
       )
-//      .withWatermark("timestamp", "10 minutes")
-//      .groupBy(
-//        window($"timestamp", "10 minutes", "5 minutes"),
-//        $"word")
-//      .count()
-
+      .withWatermark("timestamp", "1 minutes")
+      .groupBy(
+        window($"timestamp", "1 minutes", "10 seconds"),
+        $"id")
+      .count()
       .writeStream
 
       .format("console")
-
       .start()
       .awaitTermination()
 
